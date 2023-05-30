@@ -7,7 +7,7 @@ int main()
     scanf("%d",&n);
     float X[n],Y[n], x, sum=0, term;
     int i, j;
-   
+    
     printf("Enter Values of X : \n");
     for(i=0;i<n;i++)
           scanf("%f",&X[i]);
