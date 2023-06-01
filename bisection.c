@@ -17,7 +17,7 @@ void newton(float x, float error) {
         x = temp - f(temp)/derf(temp);
         printf("Iteration : %d\t | x : %f\n", iter, x);
         iter++;
-    } while (fabs(x-temp) > error);
+    } while (fabs(x-temp) >= error);
     printf("Approximate root (Newton-Raphson Method): %f\n", x);
 }
 
@@ -35,7 +35,7 @@ void bisection(float x1, float x2, float error) {
             x1 = x;
         printf("Iteration : %d\t | x1 = %f\t | x2 = %f\n", iter, x1, x2);
         iter++;
-    } while (fabs(x1 - x2) > error);
+    } while (fabs(x1 - x2) >= error);
     printf("Approximate root (Bisection Method): %f\n", x);
 }
 
